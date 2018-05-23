@@ -54,41 +54,45 @@ const ModalExampleShorthand = () => (
       <br/>
       <br/>
       <Modal className = 'scrolling'
-        trigger={<Button>Show Modal</Button>}
-        header='Modal!'
-        content='Video would go here.'
-        // <div>
-        //   <Embed id='125292332' placeholder='/assets/images/vimeo-example.jpg' source='vimeo'/>
-        // </div>
+
+        trigger={<Button>Show Modal</Button> }
         actions={[
-          { key: 'done', content: 'Done', positive: true },
+          { key: 'done', content: 'Done', positive: true},
         ]}
+        header='Your account is being set up, learn how to use Audivity!'
+        //content={ <Image floated='center' size='large' src='matthew.png' style={{width:'80%', height: '80%', marginLeft: '10%'}} />}
+        content = { <Embed id='223931187' placeholder='matthew.png' source='vimeo' style={{width:'100%', height: '80%', autoplay:'true'}}/>}
+
+
       />
       </Grid.Column>
-      </Grid>
+    </Grid>
 
 
       <Card.Group  textAlign='center' verticalAlign='left' style={{ marginRight: '1.5%',float:'right'}}>
-      <Card>
-      <Card.Content>
-      <Image floated='right' size='mini' src='matthew.png' />
-      <Card.Header>
-      Steve Sanders
-      </Card.Header>
-      <Card.Meta>
-      Specialist
-      </Card.Meta>
-      <Card.Description>
-      Steve can help if you have any questions.
-      </Card.Description>
-      </Card.Content>
-      <Card.Content >
-      <div className='ui two buttons'>
-      <Button basic color='green'>Yes</Button>
-      <Button basic color='red'>No</Button>
-      </div>
-      </Card.Content>
-      </Card>
+        <Card>
+
+          <Card.Content>
+            <Image floated='right' size='mini' src='matthew.png' />
+            <Card.Header>
+              Steve Sanders
+            </Card.Header>
+            <Card.Meta>
+              Specialist
+            </Card.Meta>
+            <Card.Description>
+              Steve can help if you have any questions.
+            </Card.Description>
+          </Card.Content>
+
+          <Card.Content>
+            <div className='ui two buttons'>
+            <Button basic color='green'>Yes</Button>
+            <Button basic color='red'>No</Button>
+            </div>
+          </Card.Content>
+
+        </Card>
       </Card.Group>
     </div>
 

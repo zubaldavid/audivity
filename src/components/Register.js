@@ -9,12 +9,12 @@ class RegisterForm extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.addProgressbar = this.addProgressbar.bind(this);
-    this.sleep = this.sleep.bind(this);
+    this.nap = this.nap.bind(this);
     this.state = { progress: 0 }
     this.state = {show : true}
   }
 
-  sleep(ms){
+  nap(ms){
     let start = Date.now();
     while(Date.now() < start + ms) {}
   }
@@ -50,8 +50,8 @@ class RegisterForm extends React.Component {
               <Form.Input
                 fluid
                 name = 'name'
-                type =  'text'
-                icon ='user'
+                type = 'text'
+                icon = 'user'
                 iconPosition ='left'
                 placeholder ='Full Name'
                 onChange = {e => this.onChange(e)}
@@ -85,6 +85,7 @@ class RegisterForm extends React.Component {
                   value={this.state.passwordConfirmation}
                   onChange={this.handleChange}
                 />
+
                 <Link to='/onboard'>
                 <Button color='teal' fluid size='large' onClick={this.addProgressbar}> Sign Up</Button>
                 </Link>
