@@ -54,17 +54,18 @@ class RegisterForm extends React.Component {
                 icon = 'user'
                 iconPosition ='left'
                 placeholder ='Full Name'
-                onChange = {e => this.onChange(e)}
-                value = {this.state.name}
+              //  onChange = {e => this.onChange(e)}
+                //value = {this.state.name}
               />
                 <Form.Input
                   fluid
-                  name = 'password'
+                  name = 'email'
+                  type='text'
                   icon='mail'
                   iconPosition='left'
                   placeholder='E-mail address'
-                  value={this.state.email}
-                  onChange={this.handleChange}
+                  //value={this.state.email}
+                  //onChange={this.handleChange}
                 />
                 <Form.Input
                   fluid
@@ -73,8 +74,8 @@ class RegisterForm extends React.Component {
                   iconPosition='left'
                   placeholder='Password'
                   type='password'
-                  value={this.state.password}
-                  onChange={this.handleChange}
+                  //value={this.state.password}
+                  //onChange={this.handleChange}
                 />
                 <Form.Input
                   fluid
@@ -82,8 +83,8 @@ class RegisterForm extends React.Component {
                   iconPosition='left'
                   placeholder='Re-Enter Password'
                   type='password'
-                  value={this.state.passwordConfirmation}
-                  onChange={this.handleChange}
+                //  value={this.state.passwordConfirmation}
+                //  onChange={this.handleChange}
                 />
 
                 <Link to='/onboard'>
