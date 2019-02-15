@@ -1,6 +1,6 @@
 # React Web App
 
-This was my first UI/UX project using React. I created minimal Register and Login pages using Semantics UI library. The Registration page directs the user to a new project where they are able to turn their blog into podcast. 
+This was my first UI/UX project using React. I created minimal Register and Login pages using Semantics UI library. The Registration page directs the user to a new project where they are able to turn their blog into a podcast. 
 
 
 Below are a few screenshots. Feel free to run the app on https://audivity.herokuapp.com/
